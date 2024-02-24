@@ -22,7 +22,9 @@ def pregunta_01():
     40
 
     """
-    return
+    fil_tbl0 = len(tbl0)
+
+    return fil_tbl0
 
 
 def pregunta_02():
@@ -33,7 +35,9 @@ def pregunta_02():
     4
 
     """
-    return
+    col_tbl0 = tbl0.shape[1]
+
+    return col_tbl0
 
 
 def pregunta_03():
