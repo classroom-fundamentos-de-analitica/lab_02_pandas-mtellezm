@@ -54,7 +54,9 @@ def pregunta_03():
     Name: _c1, dtype: int64
 
     """
-    return
+    countreg = tbl0._c1.value_counts()
+
+    return countreg
 
 
 def pregunta_04():
@@ -69,7 +71,9 @@ def pregunta_04():
     E    4.785714
     Name: _c2, dtype: float64
     """
-    return
+    mean_c2 = tbl0.groupby("_c1")["_c2"].mean()
+
+    return mean_c2
 
 
 def pregunta_05():
@@ -86,7 +90,9 @@ def pregunta_05():
     E    9
     Name: _c2, dtype: int64
     """
-    return
+    max_c2 = tbl0.groupby("_c1")["_c2"].max()
+
+    return max_c2
 
 
 def pregunta_06():
